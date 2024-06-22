@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+#scene {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stage {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.stage.active {
+    opacity: 1;
+}
+
+.info {
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cyclist {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: left 2s;
+}
+
+#cyclist img {
+    width: 100px;
+}
